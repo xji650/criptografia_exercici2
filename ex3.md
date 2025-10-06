@@ -13,6 +13,7 @@ openssl genpkey -algorithm RSA -out private.pem -pkeyopt rsa_keygen_bits:2048
 ```
 
 📄 Archivo generado: `private.pem`
+
 ✏️ **private.pem:**  
 ```
 -----BEGIN PRIVATE KEY-----
