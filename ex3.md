@@ -155,7 +155,8 @@ coefficient ((inverso de q) mod p):
 
 ✏️ **Anota los valores en decimal (usa `bc` para convertirlos si es necesario):**
 ```
-
+# Extraer el módulo (n) en decimal
+openssl rsa -in private.pem -text -noout | grep -A 10 "modulus"
 ```
 
 | Parámetro | Valor (Decimal) |
