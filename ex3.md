@@ -150,7 +150,15 @@ openssl rsa -in private.pem -pubout -out public.pem
 🔁 Envía tu archivo `public.pem`  
 
 ```
-(pón aquí tu texto original)
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq9D21XtVOmqMql5yiK2a
+4uPRBpbTbkUwi16fxXN6bl5wPwjeWA2uFvgkyeomPEznEGwQkcOCE6NiOFb9VT5C
+SK4dLS/aOFa8KdmWAg2vEmb9fV8w5JVTNsRO0PPx4CXtciOwfCoe/AkccdcdNlyb
+Aw+oh2nzALQQsZHM9B7cPAzmXv96y1hsKpKlQa/7gEXbOLY0HsxewPRCeCzFHHQb
+hDguJr+MFiiZTaqwmhq979NztV0CnvtoCspTrcL4v0TyPqBC2a0XD7wvNORg+WTr
+0qvqzwWLC54x0HGDtDELMKsNm1d6rMLNb5+SIK422Va9VAC/aHEjmXPKpUeM6Lwe
+AwIDAQAB
+-----END PUBLIC KEY-----
 ```
 
 🔁 Recibe la clave pública de tu compañero: `public_compañero.pem`
