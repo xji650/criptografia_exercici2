@@ -148,7 +148,16 @@ openssl rsa -in private.pem -pubout -out public.pem
 ### 2️⃣ Compartir la clave pública con tu compañero
 
 🔁 Envía tu archivo `public.pem`  
+
+```
+(pón aquí tu texto original)
+```
+
 🔁 Recibe la clave pública de tu compañero: `public_compañero.pem`
+
+```
+(pón aquí tu texto original)
+```
 
 ---
 
