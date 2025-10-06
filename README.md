@@ -1,13 +1,13 @@
-Práctica RSA - README
+# Práctica RSA - README
 Este programa en Java implementa paso a paso el algoritmo RSA (Rivest–Shamir–Adleman), un sistema criptográfico de clave pública. Permite al usuario ejecutar un ejemplo predeterminado o introducir sus propios valores para observar el proceso completo de generación de claves, cifrado y descifrado.
-🧩 Funcionalidades
+## Funcionalidades
 - Cálculo del máximo común divisor (MCD) mediante el algoritmo de Euclides.
 - Verificación de coprimalidad y cálculo del inverso modular usando el algoritmo extendido de Euclides.
 - Implementación de exponenciación binaria para el cálculo eficiente de potencias modulares.
 - Generación de claves RSA (p, q, e, d, n, φ(n)).
 - Cifrado y descifrado de mensajes.
 - Verificación de la propiedad fundamental RSA: m^(e*d) ≡ m (mod n).
-📂 Estructura del código
+## Estructura del código
 El programa está dividido en varias secciones principales:
 1. **Algoritmos matemáticos básicos:**
    - mcd(int a, int b): Calcula el máximo común divisor.
@@ -30,7 +30,7 @@ El programa está dividido en varias secciones principales:
    java PracticaRSA
    ```
 3. Seguir las instrucciones interactivas que aparecen en la consola.
-🧮 Ejemplo de ejecución
+## Ejemplo de ejecución
 Usando el ejemplo del enunciado:
 - p = 11
 - q = 17
