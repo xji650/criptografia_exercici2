@@ -54,7 +54,8 @@ openssl rsa -in private.pem -text -noout
 
 ```
 Private-Key: (2048 bit, 2 primes)
-modulus:
+
+modulus (n - módulo):
     00:a1:b9:b6:41:50:20:62:d8:f4:3e:d8:87:c4:4f:
     55:aa:b4:eb:e2:bf:a7:a9:17:7e:bb:7a:a3:1a:ee:
     8a:d3:ca:d5:cb:27:96:ed:70:71:e7:0b:b0:26:ab:
@@ -73,8 +74,10 @@ modulus:
     07:33:37:b1:72:e0:44:bd:3c:a1:0d:70:a2:77:58:
     33:1c:84:78:2e:47:38:4f:d9:0e:b8:e1:5e:01:5f:
     50:85
-publicExponent: 65537 (0x10001)
-privateExponent:
+
+publicExponent (e - exponente público): 65537 (0x10001)
+
+privateExponent (d - exponente privado):
     2b:c0:43:63:78:eb:42:02:82:54:ec:1c:12:8a:09:
     d9:64:17:7a:60:b1:d9:47:3f:64:35:a1:a1:5c:0e:
     17:8c:c4:78:b0:ad:9e:6f:70:88:fa:3a:fd:c3:35:
@@ -93,7 +96,8 @@ privateExponent:
     2b:1e:3c:b2:e5:fd:ef:0d:6d:c4:8e:54:e2:cf:e0:
     54:a3:db:f5:2a:fe:56:dd:0d:10:b6:eb:07:83:55:
     93
-prime1:
+
+prime1 (p - primer primo):
     00:ca:e8:8a:50:a9:05:c6:e7:7c:e1:4c:9f:42:27:
     ca:b0:1a:d1:f1:fb:12:ee:92:cc:c4:98:ab:6c:11:
     ac:89:80:20:cf:ef:bf:5a:09:4b:d7:1a:ff:c0:6f:
@@ -103,7 +107,8 @@ prime1:
     b3:8e:e6:47:5f:5f:cf:ff:57:99:12:e5:5c:e4:66:
     ca:fa:84:ea:21:3e:ed:14:5d:69:85:48:28:fe:35:
     33:16:41:bf:89:4d:cc:fb:7f
-prime2:
+
+prime2 (q - segundo primo):
     00:cc:0a:9b:1f:56:45:fd:6e:78:64:59:ee:5e:fb:
     11:81:c4:20:f7:d8:08:40:1d:1f:d4:2b:e8:4b:af:
     b3:fe:49:d6:b9:c1:93:db:09:17:7c:46:14:19:8a:
@@ -113,7 +118,8 @@ prime2:
     a9:fe:ba:94:7b:66:e4:d6:83:62:08:f9:9c:0e:2b:
     b2:da:76:d2:4d:e3:0c:ce:ee:fb:a2:cf:b9:3b:57:
     38:ef:13:77:3a:62:24:c5:fb
-exponent1:
+
+exponent1 (d mod (p-1)):
     3f:3f:ff:a5:a7:1a:7a:e7:3c:01:4b:0e:35:e4:0b:
     85:9b:c6:a8:04:98:e1:2f:77:8f:2c:fb:fa:a3:03:
     c2:94:e3:25:8e:59:7a:aa:7d:2e:9f:66:eb:c8:71:
@@ -123,7 +129,8 @@ exponent1:
     04:1b:7a:52:1b:9e:cd:bc:b3:a5:b5:43:a0:9a:fe:
     58:db:47:d4:77:36:15:ec:0c:71:94:8d:da:b8:20:
     a5:a6:77:1b:48:da:45:e7
-exponent2:
+
+exponent2 (d mod (q-1)):
     28:57:d8:80:03:b0:e7:01:16:b0:d0:cf:3e:dc:69:
     83:bc:e1:bf:df:69:12:34:2f:fc:e5:89:92:9d:74:
     fb:4c:62:36:6c:3d:ed:cb:08:67:bb:fb:71:69:5e:
@@ -133,7 +140,8 @@ exponent2:
     aa:eb:fd:3b:c1:06:72:1b:9c:20:a6:29:e2:eb:64:
     fb:a9:0e:bf:f3:aa:ae:a7:b5:fd:65:10:fc:d8:ac:
     1b:29:40:23:bd:10:04:4d
-coefficient:
+
+coefficient ((inverso de q) mod p):
     18:49:d5:35:3c:8a:f7:08:b7:e9:0f:8d:75:16:42:
     7b:21:f8:bd:e2:fe:8f:e3:18:99:52:b3:86:16:0e:
     0f:f0:7f:0b:11:fe:f0:df:d9:d7:59:e4:0d:84:6c:
@@ -146,10 +154,13 @@ coefficient:
 ```
 
 ✏️ **Anota los valores en decimal (usa `bc` para convertirlos si es necesario):**
+```
+
+```
 
 | Parámetro | Valor (Decimal) |
 |------------|----------------|
-| p (prime1) | |
+| p (prime1) | | 
 | q (prime2) | |
 | n (modulus = p × q) | |
 | e (exponente público) | |
