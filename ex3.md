@@ -12,9 +12,7 @@ Incluye **espacios editables** para que completes tus valores (claves, mensajes,
 openssl genpkey -algorithm RSA -out private.pem -pkeyopt rsa_keygen_bits:2048
 ```
 
-📄 Archivo generado: `private.pem`
-
-✏️ **private.pem:**  
+📄 Archivo generado: `private.pem`:
 ```
 -----BEGIN PRIVATE KEY-----
 MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChubZBUCBi2PQ+
