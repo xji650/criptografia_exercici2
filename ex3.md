@@ -1,4 +1,4 @@
-# 🔐  Segona pràctica: clau pública i openssl
+# 🔐  Segona pràctica: clau pública i openssl - README
 
 Este documento sirve como **guía práctica paso a paso** para realizar el ejercicio RSA con claves reales usando `openssl`.  
 Incluye **espacios editables** para que completes tus valores (claves, mensajes, resultados).
