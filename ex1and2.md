@@ -1,4 +1,4 @@
-# Práctica RSA - README
+# Práctica 2 Ejercicio 1 y 2 - README
 
 Este programa en Java implementa paso a paso el algoritmo **RSA (Rivest–Shamir–Adleman)**, un sistema criptográfico de clave pública.  
 Permite al usuario ejecutar un ejemplo predeterminado o introducir sus propios valores para observar el proceso completo de generación de claves, cifrado y descifrado.
