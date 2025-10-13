@@ -80,5 +80,7 @@ Usando el ejemplo del enunciado:
 ## Autor
 
 Desarrollado por **XiaoLong y Alex Lillo**  
+
 Materia: Seguretat d’aplicacions i comunicacions
+
 Año: 2025
