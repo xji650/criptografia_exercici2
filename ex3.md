@@ -1,4 +1,4 @@
-# 🔐 Práctica RSA con OpenSSL
+# 🔐  Segona pràctica: clau pública i openssl
 
 Este documento sirve como **guía práctica paso a paso** para realizar el ejercicio RSA con claves reales usando `openssl`.  
 Incluye **espacios editables** para que completes tus valores (claves, mensajes, resultados).
@@ -210,7 +210,15 @@ AwIDAQAB
 🔁 Recibe la clave pública de tu compañero: `public_compañero.pem`
 
 ```
-(pón aquí tu texto original)
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0KB2RfGtPJ99gQ+cX8Ah
+1gsTusqVlEddwN0X1FD8Zj9ydW932rkL5Uqr9x2K8kDI5tniripn0dJCI8mGevLP
+GxcVgWD7WWrJiudpysIEGeeCGadwTRy1HCRLvpQGoQaXHAzDyvfgtMV4ZTHhFG2Q
+0Ojgbjn2gJJEBkRqLXRPysA2JWB5EsvgEynJa/JmxlrlFd86+txzzUeo7u3SWks3
+ucnbvRxFLZajYr0rS9rjKUNehpj3qJebLx19ndmPCrFTnOe0xhaD/UDpZsqpCkrF
+RAmP8jM1+oSqgU8TsHUQUS39pqSIvUECVkzP8l0+3HE+o6mSRk2DrZqEO78Wqvyl
+kwIDAQAB
+-----END PUBLIC KEY-----
 ```
 
 ---
@@ -218,6 +226,7 @@ AwIDAQAB
 ### 3️⃣ Crear un mensaje de texto y cifrarlo con la clave pública recibida
 ```bash
 echo "Escribe tu mensaje aquí" > mensaje.txt
+
 openssl pkeyutl -encrypt -pubin -inkey public_compañero.pem -in mensaje.txt -out mensaje.enc -pkeyopt rsa_padding_mode:oaep
 ```
 
@@ -225,12 +234,16 @@ openssl pkeyutl -encrypt -pubin -inkey public_compañero.pem -in mensaje.txt -ou
 
 ✏️ **Mensaje original:**  
 ```
-(pón aquí tu texto original)
+Missatge de prova enviat desde XiaoLong a Alex
 ```
 
 ✏️ **Archivo cifrado (hex/base64 si deseas visualizar):**  
 ```
-(base64 mensaje.enc)
+uXiC4dly110z6Rd9NhYZgCUc1txEy6QFgr4+cc4c/Rb7iq9QmQw4M1lpXT+QRtC/pwhKt5VmkwZA
+e1ga5XNWuWoT7QCysNRRpjVRgARJOPLlEyEwUVcUx6K8IPPMy7eeisR4Vs15OsT+nK4eMxDlgaFP
+pu4Mtg3tmXz4b2Rpw7ibKvi7od/CKFuXcR8EMhVik/RZ7UpAPRhckX6tb//az68DkNa++vgzB6zm
+T/f+2do2Cz/PlHvAI4N5rIj6KEdmEpBVYQZirzql3i7idyj1EcFpLNVZ5gZlHVQSItSb9wtEb8Zo
+Pc9NAbqrKWE81mFCsh8LID0DIeaMI9MWa8m1mQ==
 ```
 
 ---
@@ -241,28 +254,13 @@ openssl pkeyutl -encrypt -pubin -inkey public_compañero.pem -in mensaje.txt -ou
 
 ```bash
 openssl pkeyutl -decrypt -inkey private.pem -in mensaje_recibido.enc -out mensaje_descifrado.txt
+
 cat mensaje_descifrado.txt
 ```
 
 ✏️ **Mensaje descifrado recibido:**  
 ```
-(pón aquí el texto descifrado)
-```
-
----
-
-## 🧮 Verificación
-
-✏️ **Comprobación matemática:**  
-```
-n = p × q = 
-φ(n) = (p - 1)(q - 1) = 
-d = inverso de e mod φ(n) = 
-```
-
-✏️ **Verificación de congruencia:**  
-```
-m^(e*d) ≡ m mod n → (se cumple / no se cumple)
+Missatge enviat de Alex per XiaoLong: Prova RSA
 ```
 
 ---
@@ -294,6 +292,6 @@ m^(e*d) ≡ m mod n → (se cumple / no se cumple)
 
 ---
 
-✍️ **Alumno:**  
-✍️ **Fecha:**  
-✍️ **Profesor / Asignatura:**  
+✍️ **Alumno: XiaoLong Ji y Alex Lillo**  
+✍️ **Fecha: 6 d’octubre de 2025**  
+✍️ **Asignatura: Seguretat d’aplicacions i comunicacions** 
