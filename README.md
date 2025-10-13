@@ -51,5 +51,7 @@ This repository contains implementations and demonstrations of the RSA encryptio
 ---
 
 ✍️ *Author:* Alex Lillo, XiaoLong Ji
+
 🎓 *Course:* Seguretat d’aplicacions i comunicacions – EPS Igualada , UdL
+
 📅 *Year:* 2025
