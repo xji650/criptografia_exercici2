@@ -80,5 +80,5 @@ Usando el ejemplo del enunciado:
 ## Autor
 
 Desarrollado por **XiaoLong y Alex Lillo**  
-Materia: Seguridad Informática - Criptografía 
+Materia: Seguretat d’aplicacions i comunicacions
 Año: 2025
