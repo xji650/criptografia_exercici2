@@ -8,8 +8,8 @@ This repository contains implementations and demonstrations of the RSA encryptio
 
 | Exercise | Description | Link |
 |-----------|--------------|------|
-| 🧮 **Exercise 1 & 2** | Manual RSA implementation: Euclidean algorithm, modular inverse, and binary modular exponentiation. Includes a step-by-step toy example. | [Open exercise 1 & 2 →](ex1and2.md) |
-| 🔑 **Exercise 3** | RSA encryption/decryption using **OpenSSL** with real 2048-bit keys. Includes key generation, message encryption, and decryption with private keys. | [Open exercise 3 →](ex3.md) |
+| 🧮 **Exercise 1 & 2** | Manual RSA implementation: Euclidean algorithm, modular inverse, and binary modular exponentiation. Includes a step-by-step toy example. | [Open exercise 1 & 2](ex1and2.md) |
+| 🔑 **Exercise 3** | RSA encryption/decryption using **OpenSSL** with real 2048-bit keys. Includes key generation, message encryption, and decryption with private keys. | [Open exercise 3](ex3.md) |
 
 ---
 
